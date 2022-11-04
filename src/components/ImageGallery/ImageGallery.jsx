@@ -5,9 +5,9 @@ import { ImageGalleryItem } from 'components/ImageGalleryItem/ImageGalleryItem';
 export const ImageGallery = ({ images, toggleModal }) => {
     if (images.length > 0) {
         return (
-            <ul ClassName="ImageGallery">
+            <ul className="ImageGallery">
                 {images.map(image => (
-                    <li key={image.id} ClassName="ImageGalleryItem">
+                    <li key={image.id} className="ImageGalleryItem">
                         <ImageGalleryItem item={image} onSelect={toggleModal} />
                     </li>
                 ))}

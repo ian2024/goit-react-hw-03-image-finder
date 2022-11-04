@@ -66,7 +66,7 @@ export class App extends Component {
   render() {
     const { images, error, showModal, selectedImage, status } = this.state;
     return (
-      <main ClassName="App">
+      <main className="App">
         <Searchbar onSubmit={this.handleSubmit} />
         <ImageGallery images={images} toggleModal={this.toggleModal} />
         {images.length > 0 && status !== 'pending' && (

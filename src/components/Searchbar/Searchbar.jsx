@@ -22,18 +22,18 @@ export class Searchbar extends Component {
 
     render() {
         return (
-            <header ClassName="Searchbar">
-                <form ClassName="SearchForm" onSubmit={this.handleSubmit}>
+            <header className="Searchbar">
+                <form className="SearchForm" onSubmit={this.handleSubmit}>
                     <button
                         type="submit"
-                        ClassName="SearchForm-button"
+                        className="SearchForm-button"
                         aria-label="search"
                     >
                         <HiOutlineSearch style={{ width: 20, height: 20 }} />
                     </button>
 
                     <input
-                        ClassName="SearchForm-input"
+                        className="SearchForm-input"
                         type="text"
                         autoComplete="off"
                         autoFocus

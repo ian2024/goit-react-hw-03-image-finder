@@ -8,7 +8,7 @@ export const ImageGalleryItem = ({ item, onSelect }) => {
             src={webformatURL}
             alt={tags}
             onClick={() => onSelect(largeImageURL)}
-            ClassName="ImageGalleryItem-image"
+            className="ImageGalleryItem-image"
         />
     );
 }
