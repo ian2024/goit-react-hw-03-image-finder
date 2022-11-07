@@ -56,11 +56,24 @@ export class App extends Component {
     });
   };
 
-  toggleModal = async largeImage => {
-    await this.setState({ selectedImage: largeImage });
+  // toggleModal = largeImage => {
+  //   this.setState({ showModal, selectedImage: largeImage });
+  //   this.setState(({ showModal }) => ({
+  //     showModal: !showModal,
+  //   }));
+  // };
+
+   toggleModal = () => {
     this.setState(({ showModal }) => ({
       showModal: !showModal,
     }));
+  };
+
+  openModal = largeImage => {
+    this.setState({
+      selectedImage: largeImage,
+    });
+    this.toggleModal();
   };
 
   render() {
