@@ -74,7 +74,7 @@ export class App extends Component {
     return (
       <main className="App">
         <Searchbar onSubmit={this.handleSubmit} />
-        <ImageGallery images={images} toggleModal={this.toggleModal} />
+        <ImageGallery images={images} toggleModal={this.openModal} />
         {images.length > 0 && status !== 'pending' && (
           <Button onLoadMore={this.handleLMore}>Load More</Button>
         )}
