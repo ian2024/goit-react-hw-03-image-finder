@@ -56,13 +56,6 @@ export class App extends Component {
     });
   };
 
-  // toggleModal = largeImage => {
-  //   this.setState({ showModal, selectedImage: largeImage });
-  //   this.setState(({ showModal }) => ({
-  //     showModal: !showModal,
-  //   }));
-  // };
-
    toggleModal = () => {
     this.setState(({ showModal }) => ({
       showModal: !showModal,
@@ -83,7 +76,7 @@ export class App extends Component {
         <Searchbar onSubmit={this.handleSubmit} />
         <ImageGallery images={images} toggleModal={this.toggleModal} />
         {images.length > 0 && status !== 'pending' && (
-          <Button onLoadMore={this.handleLMore}>Load Mmmoore</Button>
+          <Button onLoadMore={this.handleLMore}>Load More</Button>
         )}
         {status === 'pending' && <Loader />}
         {status === 'rejected' && <p>{error.message}</p>}
